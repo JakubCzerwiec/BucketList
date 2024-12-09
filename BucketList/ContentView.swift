@@ -69,6 +69,7 @@ struct ContentView: View {
                         Button("Standard") { viewModel.mapStyle = false }
                         Button("Hybrid") { viewModel.mapStyle = true }
                     }
+
             }
         } else {
             Button("Unlock places", action: viewModel.authenticate)
@@ -76,7 +77,11 @@ struct ContentView: View {
                 .background(.blue)
                 .foregroundStyle(.white)
                 .clipShape(.capsule)
+                .alert("Authentication unsuccessful", isPresented: $viewModel.authenticationAlert) {
+                    Button("OK", role: .cancel) { }
+                }
         }
+        
     }
         
 }

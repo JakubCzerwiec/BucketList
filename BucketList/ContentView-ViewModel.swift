@@ -22,6 +22,9 @@ extension ContentView {
         
         let savePath = URL.documentsDirectory.appending(path: "SavedPlaces")
         
+        var authenticationAlert = false
+        var errorMessage = ""
+        
         init() {
             do {
                 let data = try Data(contentsOf: savePath)
@@ -67,7 +70,9 @@ extension ContentView {
                     if success {
                         self.isUnlocked = true
                     } else {
-                        // error
+               //         self.errorMessage = error?.localizedDescription
+                        print("No go \(String(describing: error?.localizedDescription))")
+                        self.authenticationAlert = true
                     }
                 }
             } else {

@@ -12,7 +12,7 @@ struct Result: Codable {
 }
 
 struct Query: Codable {
-    let pages: [Int: Page]
+    var pages: [Int: Page]
 }
 
 struct Page: Codable, Comparable {
