@@ -45,7 +45,6 @@
 		876F9F922D03807B00B7894E = {
 			isa = PBXGroup;
 			children = (
-				876F9FB42D0721B400B7894E /* EditView-ViewModel.swift */,
 				876F9F9D2D03807B00B7894E /* BucketList */,
 				876F9F9C2D03807B00B7894E /* Products */,
 			);
@@ -64,6 +63,7 @@
 			children = (
 				876F9F9E2D03807B00B7894E /* BucketListApp.swift */,
 				876F9FA02D03807B00B7894E /* ContentView.swift */,
+				876F9FB42D0721B400B7894E /* EditView-ViewModel.swift */,
 				876F9FB22D05F24600B7894E /* ContentView-ViewModel.swift */,
 				876F9FAE2D04D66600B7894E /* EditView.swift */,
 				876F9FB02D05D22B00B7894E /* Result.swift */,
